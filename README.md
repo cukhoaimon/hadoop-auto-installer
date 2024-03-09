@@ -54,4 +54,32 @@ Change the value of username to your username
 cd hadoop-auto-installer && ./install-hadoop.sh
 ```
 
+### Verify install
+```
+cd ~/hadoop/hadoop-3.3.6/
+```
 
+Run format name node
+```
+bin/hdfs namenode -format
+```
+
+Start Daemon
+```
+sbin/start-dfs.sh
+```
+
+Go to web browser and check NameNode
+```
+http://localhost:9870/
+```
+
+Start YARN
+```
+sbin/start-yarn.sh
+```
+
+Go to web browser and check Yarn
+```
+http://localhost:8088/
+```
