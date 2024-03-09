@@ -35,10 +35,7 @@ echo $HADOOP_USER_PASSWORD | sudo -S apt install openjdk-8-jdk-headless -y
 
 # Installing Hadoop 3.3.6
 echo ">>>> 4. Installing Hadoop... <<<<"
-
-mkdir -p $HADOOP_PARENT_DIR
-mkdir -p $HADOOP_PARENT_DIR/dfs/data322
-mkdir -p $HADOOP_PARENT_DIR/dfs/name332
+mkdir -p $HADOOP_PARENT_DIR/dfs/{data322,name332}
 
 echo ">>>> Downloading hadoop-3.3.6 <<<<"
 wget $HADOOP_ORIGIN
@@ -72,7 +69,6 @@ echo $HADOOP_USER_PASSWORD | sudo -S bash -c 'source conf/config.sh && echo "HAD
 ## Update and export PATH
 echo $HADOOP_USER_PASSWORD | sudo -S bash -c "source conf/config.sh && echo PATH='$'PATH:'$'HADOOP_HOME/bin:'$'HADOOP_HOME/sbin >> ~/.bashrc"
 echo $HADOOP_USER_PASSWORD | sudo -S bash -c 'source conf/config.sh && echo "export PATH" >> ~/.bashrc'
-echo $HADOOP_USER_PASSWORD | sudo -S chown cukhoaimon $HADOOP_PARENT_DIR/hadoop-3.3.6
 
 ## Load bash profile changes into current terminal session
 source ~/.bashrc
