@@ -16,11 +16,11 @@
 # limitations under the License.
 
 # Set Hadoop-specific environment variables here.
-export HDFS_NAMENODE_USER="root"
-export HDFS_DATANODE_USER="root"
-export HDFS_SECONDARYNAMENODE_USER="root"
-export YARN_RESOURCEMANAGER_USER="root"
-export YARN_NODEMANAGER_USER="root"
+export HDFS_NAMENODE_USER="cukhoaimon"
+export HDFS_DATANODE_USER="cukhoaimon"
+export HDFS_SECONDARYNAMENODE_USER="cukhoaimon"
+export YARN_RESOURCEMANAGER_USER="cukhoaimon"
+export YARN_NODEMANAGER_USER="cukhoaimon"
 
 ##
 ## THIS FILE ACTS AS THE MASTER FILE FOR ALL HADOOP PROJECTS.
