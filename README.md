@@ -7,8 +7,7 @@ A Windows OS with WSL installed, notice that this repository was just tested on 
 
 Install git in WSL
 ```
-sudo apt-get update
-sudo apt-get install git
+sudo apt-get update && sudo apt-get install git
 ```
 
 ## Usage
@@ -19,8 +18,7 @@ wsl --distribution Ubuntu # or Ubuntu-22.04, ....
 ```
 
 ```
-git clone https://github.com/cukhoaimon/hadoop-auto-installer
-cd hadoop-auto-installer
+git clone https://github.com/cukhoaimon/hadoop-auto-installer && cd hadoop-auto-installer
 ```
 
 ### Change environment variables
@@ -68,7 +66,7 @@ Change the value of username to your username
 
 ### Run installer
 ```
-cd hadoop-auto-installer && ./install-hadoop.sh
+chmod +rwx install-hadoop.sh && ./install-hadoop.sh
 ```
 
 ### Verify install
