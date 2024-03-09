@@ -5,6 +5,12 @@ This repository is an installer for who want to Setting up a **Hadoop Single Nod
 ## Prerequisites
 A Windows OS with WSL installed, notice that this repository was just tested on Ubuntu distribution. 
 
+Install git in WSL
+```
+sudo apt-get update
+sudo apt-get install git
+```
+
 ## Usage
 ### Change environment variables
 #### In file `conf/config.sh`
