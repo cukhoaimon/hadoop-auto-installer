@@ -12,6 +12,17 @@ sudo apt-get install git
 ```
 
 ## Usage
+### Clone repository 
+Open windows terminal, start WSL
+```
+wsl --distribution Ubuntu # or Ubuntu-22.04, ....
+```
+
+```
+git clone https://github.com/cukhoaimon/hadoop-auto-installer
+cd hadoop-auto-installer
+```
+
 ### Change environment variables
 #### In file `conf/config.sh`
 - Change `HADOOP_USER_PASSWORD` to the password of your wsl. 
