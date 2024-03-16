@@ -92,3 +92,6 @@ sbin/start-yarn.sh
 ```
 
 Go to web browser and check Yarn `http://localhost:8088/`
+
+## Reference
+For Vietnamese step-by-step guide, please check this [link](https://tan-egg-884.notion.site/Hadoop-C-i-t-Single-Node-Cluster-fc4db79869b746229ec1a2cdf42ae259?pvs=4)
